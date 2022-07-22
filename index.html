@@ -199,7 +199,24 @@
             <div class="col-md-6 col-lg-4 mg-3">
               <div class="kopi-box">
                 <h4 class="kopi-name">Kopi Tuku</h4>
-                <a href="#" class="btn btn-light">Show Details</a>
+                <img src="img/kopi/1.png" alt="Kopi Tuku" class="kopi-img" />
+                <a href="#" class="btn btn-light kopi-detail-button">Show Details</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mg-3">
+              <div class="kopi-box">
+                <h4 class="kopi-name">Kopi Asa</h4>
+                <img src="img/kopi/3.png" alt="Kopi Asa" class="kopi-img" />
+                <a href="#" class="btn btn-light kopi-detail-button">Show Details</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mg-3">
+              <div class="kopi-box">
+                <h4 class="kopi-name">Kopi Nako</h4>
+                <img src="img/kopi/2.png" alt="Kopi Nako" class="kopi-img" />
+                <a href="#" class="btn btn-light kopi-detail-button">Show Details</a>
               </div>
             </div>
           </div>
@@ -400,6 +417,14 @@
           })
 
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".kopi-box"), {
+        max: 25,
+        speed: 400,
+        glare: true,
       });
     </script>
   </body>
